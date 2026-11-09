@@ -1,0 +1,23 @@
+Package: mbBench
+Type: Package
+Title: Conditional Microbiome Simulation and Benchmark Data
+Version: 0.1.0
+Authors@R: person("MicrobiomeBench", "Authors", email = "zhangzhizhuo@sjtu.edu.cn", role = c("aut", "cre"))
+Description: Loads pre-generated microbiome benchmark datasets directly in R
+    and provides an optional interface to the mbBench Python backend for
+    conditional simulation and truth-informed benchmark generation. Standard
+    DA and batch-correction result tables can be evaluated directly in R.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 4.1)
+Imports:
+    curl,
+    jsonlite,
+    yaml
+Suggests:
+    lisi,
+    reticulate (>= 1.41),
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
